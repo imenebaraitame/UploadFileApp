@@ -7,7 +7,6 @@ import static ratpack.groovy.Groovy.ratpack
     ratpack {
         bindings {
             module(ThymeleafModule)
-
         }
         handlers {
             get{
@@ -15,7 +14,7 @@ import static ratpack.groovy.Groovy.ratpack
             }
             get("upload"){
 
-                render (thymeleafTemplate("photo"))
+                render (thymeleafTemplate("upload"))
             }
             post("ocr"){
                 render(thymeleafTemplate("ocr"))
